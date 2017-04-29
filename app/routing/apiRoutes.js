@@ -10,7 +10,7 @@ module.exports = function(app) {
 	
 	//Directs the response to friends.js in the data folder
 	app.get("/api/friends", function(req, res){
-		res.json(friends);
+		res.json( friends );
 	});
 
 
@@ -20,7 +20,7 @@ module.exports = function(app) {
 		// console.log(newBody);
 
 		var newEntry = {
-			requestName: req.body.customerRequestName,
+			requestName: req.body.requestName,
 			name: req.body.name,
 			scores: req.body.scores//this needs to be an array
 		};		
